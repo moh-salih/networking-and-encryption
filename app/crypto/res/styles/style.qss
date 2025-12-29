@@ -1,0 +1,115 @@
+/* ────────────────────────────────
+   Classic Cipher GUI Stylesheet
+   ──────────────────────────────── */
+
+* {
+    color: #555
+}
+QWidget {
+    font-family: 'Segoe UI';
+    font-size: 10pt;
+    background-color: #FFF
+}
+
+QGroupBox {
+    font-weight: bold;
+    border: 1px solid #c3c7d0;
+    border-radius: 6px;
+    margin-top: 6px;              /* smaller, stable top margin */
+    padding-top: 20px;            /* reserve fixed space for title */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    background-color: #ffffff;
+}
+
+QGroupBox::title {
+    subcontrol-origin: padding;   /* ← important: stable offset */
+    left: 10px;
+    padding: 0 4px;
+    background-color: transparent;
+}
+
+
+
+QComboBox, QLineEdit, QTextEdit {
+    background-color: #ffffff;
+    border: 1px solid #b9bec7;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+QComboBox:hover, QLineEdit:hover, QTextEdit:hover {
+    border-color: #0078d7;
+}
+
+QRadioButton {
+    spacing: 5px;
+}
+
+QPushButton {
+    background-color: #0078d7;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 16px;
+    font-weight: 500;
+    min-height: 32px;          /* ← ensures emoji/icons fit */
+    min-width: 80px;
+    line-height: 1.1em;
+}
+
+
+QPushButton:hover {
+    background-color: #2894ff;
+}
+
+QPushButton:pressed {
+    background-color: #005a9e;
+}
+
+QTextEdit {
+    font-family: Consolas, monospace;
+    font-size: 10pt;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background: #f0f0f0;
+    width: 10px;
+    margin: 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #c0c0c0;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #a0a0a0;
+}
+
+/* ─────────────────────────────── File Operation Buttons ─────────────────────────────── */
+
+QPushButton#openButton {
+    background-color: #6c757d;
+    color: white;
+}
+
+QPushButton#openButton:hover {
+    background-color: #7d8690;
+}
+
+QPushButton#saveButton {
+    background-color: #28a745;
+    color: white;
+}
+
+QPushButton#saveButton:hover {
+    background-color: #2ec653;
+}
+
+QPushButton#saveButton:disabled {
+    background-color: #a7d4b0;
+    color: #f0f0f0;
+}

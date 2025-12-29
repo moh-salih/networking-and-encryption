@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "mtp",
+  "version": "1.0.0",
+  "builtin-baseline": "84bab45d415d22042bd0b9081aea57f362da3f35",
+  "dependencies": [
+    "boost-asio",
+    "boost-system",
+    "boost-thread",
+    "boost-filesystem",
+    "nlohmann-json",
+    "openssl",
+    "argparse",
+    {
+      "name": "imgui",
+      "features": ["glfw-binding", "opengl3-binding"]
+    },
+    "glfw3",
+    "glew",
+    "opengl",
+    "stb",
+    "catch2"
+  ]
+}
