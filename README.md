@@ -35,3 +35,5 @@ The system supports two transport layers:
 ## 🔨 Build Instructions
 
 1.  **Requirements:** CMake , OpenSSL, Qt6, Boost (Asio), Catch2, GLFW3, ImGUI
+
+# Disclaimer: AI-assisted tools (including ChatGPT) were widely used during development, primarily for user interfaces and unit tests
