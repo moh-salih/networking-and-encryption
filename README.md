@@ -16,6 +16,8 @@ both implementations in our server-client chat application.
 -   **Cross-Platform UI:** -   **Qt-based** Tool for local testing for `crypto`.
     -   **ImGui/GLFW-based** Modern Chat Client and Server Dashboard.
 
+
+
 ## 🛠 Project Structure
 
 -   `/app/crypto`: Qt GUI for local cipher testing.
@@ -26,14 +28,24 @@ both implementations in our server-client chat application.
     -   `/standard`: OpenSSL wrappers for AES-CBC and RSA-OAEP.
 -   `/tests`: Catch2 unit tests for validating implementation correctness.
 
+
+
 ## 🛡 Network Security & Wireshark Analysis
 
 The system supports two transport layers:
 1.  **Plain (TCP):** Data is not encrypted, and is sent in raw JSON format (Visible in Wireshark).
 2.  **Secure (TLS/Custom):** Currently broken
 
+
+
 ## 🔨 Build Instructions
 
 1.  **Requirements:** CMake , OpenSSL, Qt6, Boost (Asio), Catch2, GLFW3, ImGUI
+
+## 📸 Screenshots
+
+![Chat application demo](screenshots/1.png)
+
+
 
 # Disclaimer: AI-assisted tools (including ChatGPT) were widely used during development, primarily for user interfaces and unit tests
